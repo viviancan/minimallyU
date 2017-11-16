@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Page title here</title>
+    <title>physical health</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
     <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 
@@ -13,10 +13,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="images/lotus35.png">
-                </a>
-
+                <img src="images/svg35.svg" id="navbar-logo">
             </div>
 
             <ul class="nav navbar-nav pull-right">
@@ -47,45 +44,61 @@
     </nav>
 
     <div class="container">
-        <div class="col-sm-3">
+
+        <div class="col-sm-3" id="caption">
             <div class="row">
-                <p>audio here</p>
-                <p>captions here</p>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <p id="caption-text">welcome to MinimallyU Module 3.<br/> In this module, we'll share with you some tips to maintain health in minimal way.Please read the summary of course and watch the video <em>Tips for Starting a Healthy Lifestyle!</em></p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row text-center">
+                <audio controls>
+                    <source src="" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="row text-center">
+                <a href="emotional.html"><p><i>Up Next: Emotional Health</i></p></a>
             </div>
         </div>
 
         <div class="col-sm-9">
-            <div class="row">
-                <h4>Physical Health </h4>
-                <p>Minimalism provides myriad benefits. Less Stress. More time.
-                    A greater appreciation for the people and events that truly
-                    matter in your life. Follow these bare essentials of Minimalist
-                    Guide to Physical Health will improve your health while saving
-                    precious time and even money.
-                </p>
+            <div class="col-sm-11">
+                <div class="row">
+                    <h4>Physical Health </h4>
+                    <p>Fitness can be complicated, but take a minimalist approach to fitness allows you to focus on the basics for maintaining fitness and wellness. Do whatever your body really enjoy. You do not need to invest in a special workout or product. The basics are enough to get you fit and keep you healthy.
+                    </p>
 
-                <h5><The Minimalist Guide to Physical Health></h5>
-                <ol>
-                    <li>Move Your Body in a Way You Enjoy </li>
-                    <li>Take advantage of Local Parks</li>
-                    <li>Go Hiking</li>
-                    <li>Ride a Bike</li>
-                    <li>Push-up</li>
-                    <li>Pull-up</li>
-                    <li>Squats</li>
-                </ol>
+                   <div class="row text-center">
+                       <h5><The Minimalist Guide to Physical Health></h5>
+
+                       <div class="col-sm-8 col col-sm-offset-2">
+                           <img src="images/parkSVG.svg" id="slideshow"/>
+
+                           <h6 id="heading">Take Advantage of Local Parks</h6>
+
+                            <br>
+
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <a href="#" class="btn btn-block" role="button" onclick="changeImage(-1); return false;">Previous</a>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <a href="#" class="btn btn-block" role="button" onclick="changeImage(1); return false;">Next</a>
+                            </div>
+                       </div>
+                   </div>
+                </div>
             </div>
-
-            <div class="pull-right">
-                <a href="emotional.html"><button>Next</button></a>
-            </div>
-
         </div>
-
     </div>
 
-    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="scripts/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script language="javascript" src="scripts/physical-slideshow.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Page title here</title>
+    <title>Mod2 | Assessment</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
     <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 
@@ -13,10 +13,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/topic-2.html">
-                    <img alt="Brand" src="images/lotus35.png">
-                </a>
-
+                <img src="images/svg35.svg" id="navbar-logo">
             </div>
 
             <ul class="nav navbar-nav pull-right">
@@ -24,13 +21,23 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="topic-1.html">Welcome</a></li>
-                        <li><a href="objectives.html">Objectives</a></li>
-                        <li><a href="questions.html">Questions</a></li>
+                        <li><a href="outline.html">Module Outline</a></li>
+						<li><a href="objectives.html">Objectives</a></li>
                     </ul>
                 </li>
-                <li><a href="capsule.html">Capsule Wardrobe</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Capsule Wardrobe <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="capsule.html">What is Capusle Wardrobe?</a></li>
+                        <li><a href="scan.html">Step 1: Scan</a></li>
+                        <li><a href="sort.html">Step 2: Sort</a></li>
+                        <li><a href="select.html">Step 3: Select</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="twelve.html">12-12-12</a></li>
                 <li><a href="additionalresources.html">Additional Resources</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
                 <li class="active"><a href="assessment.html">Assessment</a></li>
                 <!--<li><a href="certificate.html">Certificate</a></li>-->
             </ul>
@@ -38,14 +45,27 @@
     </nav>
 
     <div class="container">
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="caption">
+
             <div class="row">
-                <p>audio here</p>
-                <p>captions here</p>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <p id="caption-text">CAPTIONS HERE</p>
+                </div>
             </div>
+
+            <hr>
+
+            <div class="row text-center">
+                <audio controls>
+                    <source src="" type="audio/mpeg"/>
+                </audio>
+
+            </div>
+
         </div>
 
         <div class="col-sm-9">
+            <div class="col-sm-11">
             <div class="row">
                 <h4>Assessment</h4>
                 <p>You will complete the following multiple choice quiz. In order to move on, you must pass the assessment</p>
@@ -55,52 +75,89 @@
                 <form id="quiz2" name="quiz2" onsubmit="javascript: processQuiz(); return false;">
 
                     <div class="form-group"> <!-- Question 1!-->
-                        <label for="question1" class="control-label">1. What is this course about?</label>
+                        <label for="question1" class="control-label">1. What is a myth about decluttering?</label>
                         <div class="radio">
-                            <label><input type="radio" id="question1" name="question1" value="0" >Changing your life</label>
+                            <label><input type="radio" id="question1" name="question1" value="0" >It will make your life easier.</label>
                         </div>
 
                         <div class="radio">
-                            <label><input type="radio" id="question1" name="question1" value="1">Improving your math skills</label>
+                            <label><input type="radio" id="question1" name="question1" value="1">Getting rid of possessions will bring you joy.</label>
                         </div>
 
                         <div class="radio">
-                            <label><input type="radio" id="question1"  name="question1" value="2">Learning another language</label>
+                            <label><input type="radio" id="question1"  name="question1" value="2">It will happen overnight.</label>
                         </div>
                     </div>
 
                     <div class="form-group"> <!-- Question 2!-->
-                        <label for="question2" class="control-label">2. What topics will be covered in this course?</label>
+                        <label for="question2" class="control-label">2. What are the three S’s when beginning a capsule wardrobe?</label>
                         <div class="radio">
                             <label><input type="radio" id="question2" name="question2" value="0" >
-                                Decluttering your environment, Finding a job, being a better friend
+                                Survey, Sort, Sell
                             </label>
                         </div>
 
                         <div class="radio">
                             <label><input type="radio" id="question2" name="question2" value="1">
-                                Fixing your resume, Becoming a runner, Adopting a pet
+                                Scan, Sort, Select
                             </label>
                         </div>
 
                         <div class="radio">
                             <label>
                                 <input type="radio" id="question2"  name="question2" value="2">
-                                Reducing debt, Decluttering your life, Improving your health
+                                Scan, Sort, Sell
                             </label>
                         </div>
+                        
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="question2"  name="question2" value="3">
+                                Survey, Sort, Sell
+                            </label>
+                        </div>
+                        
                     </div>
 
                     <div class="form-group"> <!-- Question 3!-->
-                        <label for="question3" class="control-label">3. In order to move on, this quiz must be completed</label>
+                        <label for="question3" class="control-label">3. How often do you rotate your capsule wardrobe?</label>
                         <div class="radio">
-                            <label><input type="radio" id="3" name="question3" value="0" >True</label>
+                            <label><input type="radio" id="3" name="question3" value="0" >Twice a year</label>
                         </div>
 
                         <div class="radio">
-                            <label><input type="radio" id="question3" name="question3" value="1">False</label>
+                            <label><input type="radio" id="question3" name="question3" value="1">Every month</label>
+                        </div>
+                        
+                        <div class="radio">
+                            <label><input type="radio" id="question3" name="question3" value="2">Every 3 months</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group"> <!-- Question 4!-->
+                        <label for="question4" class="control-label">4. What is the 12-12-12 challenge?</label>
+                        <div class="radio">
+                            <label><input type="radio" id="question4" name="question4" value="0" >You meditate 12 times a day for 12 days.</label>
                         </div>
 
+                        <div class="radio">
+                            <label><input type="radio" id="question4" name="question4" value="1">You select 12 items to throw away, 12 things to donate, and 12 things to return to their proper home</label>
+                        </div>
+
+                        <div class="radio">
+                            <label><input type="radio" id="question4" name="question4" value="2">You buy 12 things for 12 days for 12 months.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group"> <!-- Question 5!-->
+                        <label for="question5" class="control-label">5. Do possessions hide an underlying issue?</label>
+                        <div class="radio">
+                            <label><input type="radio" id="question5" name="question5" value="0" >True</label>
+                        </div>
+
+                        <div class="radio">
+                            <label><input type="radio" id="question5" name="question5" value="1">False</label>
+                        </div>
                     </div>
 
                     <div class="form-group"> <!-- Submit button !-->
@@ -112,14 +169,13 @@
             <div class="row text-center">
                 <a href="certificate.html"><h5 id="certificate-link" style="display: none;">Click here for your certificate</h5></a>
             </div>
-
-
+            </div>
         </div>
     </div>
 
 
 
-    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="scripts/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="scripts/quiz2.js"></script>
 

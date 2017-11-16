@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Page title here</title>
+    <title>Mental Health</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
     <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 
@@ -13,10 +13,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="images/lotus35.png">
-                </a>
-
+                <img src="images/svg35.svg" id="navbar-logo">
             </div>
 
             <ul class="nav navbar-nav pull-right">
@@ -48,41 +45,62 @@
     </nav>
 
     <div class="container">
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="caption">
             <div class="row">
-                <p>audio here</p>
-                <p>captions here</p>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <p id="caption-text">CAPTIONS HERE</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row text-center">
+                <audio controls>
+                    <source src="" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+
+            <div class="row text-center">
+                <a href="physical.html"><p><i>Up Next: Physical Health</i></p></a>
             </div>
         </div>
 
         <div class="col-sm-9">
-            <div class="row">
-                <h4>Mental Health </h4>
-                <p>Living with Less means more mental health. But how do you mentally declutter?
-                    In short, clear your mind of the obsessive thoughts which cause overwhelm and keep you mired in
-                    avoidance, indecision and procrastination. While no shortcuts exist to get rid of unwanted thoughts,
-                    the following minimalist mindsets can help set the tone for a cleaner psychological slate.</p>
+            <div class="col-sm-11">
+                <div class="row">
+                    <h4>Mental Health </h4>
+                    <p>Minimalist highly cherish the concepts of simplicity and necessity. These concepts can also be applied to mental health.Living with Less things, frequently do mental declutter and slow down your pace are great tips to maintain mental health.</p>
+                </div>
 
-                <h5>Living with Less Means More Mental Health</h5>
-                    <ol>
-                        <li>Better to Donate Than Accumulate</li>
-                        <li>Love People, Not Things </li>
-                        <li>Simplify, Simplify, Simplify</li>
-                        <li>Slowing Down is Everything to Creating Mental Peace</li>
+                <div class="row text-center">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <img src="images/minimalSVG.svg"  id="slideshow" />
+                        <h6 id="heading">Living with Less</h6>
 
-                    </ol>
+                       <div id="slideshow-caption">
+                           There are few obvious benefits for living with Less such as: a more organized household and more money to be found, but there are also a few deep, life-changing benefits such as: creating a calm, peaceful mind.
+                       </div>
+
+                        <br>
+
+                        <div class="col-sm-4 col-sm-offset-2">
+                            <a href="#" class="btn btn-block" role="button" onclick="changeImage(-1); return false;">Previous</a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a href="#" class="btn btn-block" role="button" onclick="changeImage(1); return false;">Next</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="pull-right">
-                <a href="physical.html"><button>Next</button></a>
-            </div>
-
         </div>
-
     </div>
 
-    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="scripts/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script language="javascript" src="scripts/mental-slideshow.js"></script>
 
     </body>
 </html>
